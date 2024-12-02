@@ -1,0 +1,140 @@
+/* Allgemeine Einstellungen */
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 3rem; /* Seitenabstand für Überschriften */
+}
+
+/* Container für Inhalte */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Begrenzung auf Standard-Bildschirmgröße */
+}
+
+/* Navigationsleiste */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Position fixiert */
+    width: 100%;
+    padding-top: 30px; /* Höhe der Navigationsleiste */
+    z-index: 1000; /* Sicherstellen, dass die Navigationsleiste immer oben bleibt */
+}
+
+.nav-left .name {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    gap: 4rem;
+    padding-right: 3rem; /* Abstand rechts für den "Contact"-Link */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffff00;
+}
+
+/* Sektionen */
+.section {
+    padding: 2rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem; /* Seitenabstand für h2-Überschrift */
+}
+
+.section p {
+    font-size: 1rem;
+}
+
+/* Galerie */
+.gallery {
+    padding: 6rem 2rem;
+    text-align: center; /* Zentriert die Galerie */
+    width: 100%; /* Galerie soll die komplette Breite des Containers ausfüllen */
+}
+
+.gallery-grid {
+    display: grid;
+    justify-content: center; /* Zentriert die Galerie in der Horizontalen */
+    gap: 10px;
+    grid-template-columns: repeat(2, 670px); /* Zwei Spalten, automatisch gleichmäßig */
+    max-width: 1200px; /* Maximalbreite der Galerie */
+    margin: 0 auto; /* Zentriert die Galerie auf der Seite */
+}
+
+/* Container für jedes Bild */
+.image-container {
+    position: relative; /* Wichtige Positionierung für die Beschreibung */
+    overflow: hidden; /* Verhindert, dass die Beschreibung über das Bild hinausragt */
+}
+
+/* Stil für die Bilder */
+.gallery-grid img {
+    width: 100%;
+    height: 500px; /* Festgelegte Höhe für die Fotokacheln */
+    object-fit: cover; /* Damit das Bild das Seitenverhältnis behält */
+    display: block;
+    transition: all 0.3s ease; /* Weicher Übergang für alle Hover-Effekte */
+}
+
+/* Hover-Effekt für die Fotokacheln */
+.gallery-grid img:hover {
+    filter: brightness(1.2); /* Bild wird heller beim Hover */
+}
+
+/* Container für die Bildbeschreibung */
+.image-container .description {
+    position: absolute;
+    top: 50%; /* Vertikal zentriert */
+    left: 50%; /* Horizontal zentriert */
+    transform: translate(-50%, -50%); /* Verschiebt die Beschreibung, damit sie wirklich zentriert ist */
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem; /* Größe der Bildbeschreibung */
+    opacity: 0; /* Standardmäßig ausgeblendet */
+    transition: opacity 0.3s ease; /* Weicher Übergang für das Einblenden */
+}
+
+/* Bildbeschreibung bei Hover anzeigen */
+.image-container:hover .description {
+    opacity: 1; /* Zeigt die Beschreibung, wenn der Container gehovt wird */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Eine Spalte für Mobil */
+    }
+
+    .gallery-grid img {
+        width: 100%; /* Bilder passen sich der mobilen Ansicht an */
+        height: auto; /* Höhe bleibt im Verhältnis */
+    }
+}
