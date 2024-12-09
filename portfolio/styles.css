@@ -46,13 +46,13 @@ h1, h2 {
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-size: 1rem;
     transition: color 0.3s;
 }
 
 .nav-link:hover {
-    color: #ffff00;
+    color: #d0ff00;
 }
 
 /* Sektionen */
@@ -105,17 +105,18 @@ h1, h2 {
 
 /* Hover-Effekt für die Fotokacheln */
 .gallery-grid img:hover {
-    filter: brightness(1.2); /* Bild wird heller beim Hover */
+    filter: blur(8px); /* Bild wird blurry beim Hover */
 }
 
 /* Container für die Bildbeschreibung */
 .image-container .description {
     position: absolute;
+    mix-blend-mode: difference; /* Dynamische Anpassung der Schriftfarbe */
     top: 50%; /* Vertikal zentriert */
     left: 50%; /* Horizontal zentriert */
     transform: translate(-50%, -50%); /* Verschiebt die Beschreibung, damit sie wirklich zentriert ist */
-    color: #000000;
-    padding: 1rem;
+    color: #ffffff;
+    padding: none;
     text-align: center;
     font-size: 2rem; /* Größe der Bildbeschreibung */
     opacity: 0; /* Standardmäßig ausgeblendet */
