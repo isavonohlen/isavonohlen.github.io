@@ -75,8 +75,7 @@ h1, h2 {
 /* Galerie */
 .gallery {
     padding: 6rem 2rem;
-    text-align: center; /* Zentriert die Galerie */
-    width: 100%; /* Galerie soll die komplette Breite des Containers ausfüllen */
+    text-align: center; /* Zentriert die Galerie */    
 }
 
 .gallery-grid {
@@ -84,7 +83,7 @@ h1, h2 {
     justify-content: center; /* Zentriert die Galerie in der Horizontalen */
     gap: 10px;
     grid-template-columns: repeat(2, 670px); /* Zwei Spalten, automatisch gleichmäßig */
-    max-width: 1200px; /* Maximalbreite der Galerie */
+    max-width: 1400px; /* Maximalbreite der Galerie */
     margin: 0 auto; /* Zentriert die Galerie auf der Seite */
 }
 
@@ -115,10 +114,10 @@ h1, h2 {
     top: 50%; /* Vertikal zentriert */
     left: 50%; /* Horizontal zentriert */
     transform: translate(-50%, -50%); /* Verschiebt die Beschreibung, damit sie wirklich zentriert ist */
-    color: #ffffff;
+    color: white;
     padding: none;
     text-align: center;
-    font-size: 2rem; /* Größe der Bildbeschreibung */
+    font-size: 4rem; /* Größe der Bildbeschreibung */
     opacity: 0; /* Standardmäßig ausgeblendet */
     transition: opacity 0.3s ease; /* Weicher Übergang für das Einblenden */
 }
