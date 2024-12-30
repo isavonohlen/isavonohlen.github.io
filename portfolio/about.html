@@ -3,44 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About</title>
+    <link rel="stylesheet" href="styles-about.css">
 </head>
 <body>
     <!-- Navigationsleiste -->
     <nav class="navbar">
         <div class="nav-left">
-            <h1 class="name">Your Company</h1>
+            <h1 class="name">Isa von Ohlen</h1>
         </div>
         <div class="nav-right">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Work</a>
             <a href="about.html" class="nav-link">About</a>
             <a href="contact.html" class="nav-link">Contact</a>
         </div>
     </nav>
 
-    <!-- Kontaktbereich -->
-    <section class="contact-section">
-        <div class="contact-container">
-            <h2>Kontaktieren Sie uns</h2>
-            <p>Wir freuen uns über Ihre Nachricht. Bitte füllen Sie das Formular aus, und wir melden uns so schnell wie möglich bei Ihnen!</p>
-            
-            <form action="#" method="post" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-Mail</label>
-                    <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Nachricht</label>
-                    <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">Nachricht senden</button>
-            </form>
+   <!-- Hauptbereich -->
+   <div class="container">
+    <!-- Einleitung -->
+    <section class="section">
+        <div class="about-grid">
+            <!-- Foto -->
+            <div class="about-image">
+                <img src="./assets/about/about_portrait_isavonohlen.jpg" alt="Porträt von Isa von Ohlen" class="profile-image">
+            </div>
+            <!-- Text -->
+            <div class="about-text">
+                <p>
+                    Nach dem Abitur zog es mich ins Ausland, um verschiedene kreative Berufe auszuprobieren. In einer Tischlerei entdeckte ich 
+                    meine Leidenschaft für das Handwerk, was mich zu einer Ausbildung zur Tischlerin führte. Doch ich wollte mehr – kreative Ideen 
+                    entwickeln und umsetzen. Deshalb begann ich ein Studium, das Gestaltung mit Technik verbindet.
+                </p>
+                <p>
+                    Besonders interessiere ich mich für Korbflechten, Schmuckdesign und Keramik sowie für digitale Tools wie Adobe, Rhino, Fusion 
+                    und CNC-Fräsen. Darüber hinaus fasziniert mich das Konzept von Micro-Living und die Entwicklung von Low-Tech Innovationen. 
+                    In Zukunft möchte ich diese Interessen vereinen und funktionale, ästhetische Designs erschaffen, die sowohl praktisch als auch nachhaltig sind.
+                </p>
+            </div>
         </div>
-    </section>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Isa von Ohlen. All rights reserved.</p>
+    </footer>
 </body>
 </html>
