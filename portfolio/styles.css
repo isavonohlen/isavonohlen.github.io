@@ -131,7 +131,22 @@ footer {
 }
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
+    
+    .nav-right {
+        gap: 1rem; /* Verringert den Abstand zwischen den Links */
+        padding-right: 1rem; /* Reduzierter Rand rechts */
+    }
+
+    .nav-link {
+        font-size: 0.9rem; /* Kleinere Schriftgröße */
+    }
+
+    .nav-left .name {
+        font-size: 1.5rem; /* Kleinere Schriftgröße für den Namen */
+    }
+    
     .gallery-grid {
         grid-template-columns: 1fr; /* Eine Spalte für Mobil */
     }
