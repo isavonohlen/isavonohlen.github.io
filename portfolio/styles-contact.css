@@ -143,17 +143,18 @@ h1, h2 {
 
     .nav-right {
         gap: 1rem; /* Verringert den Abstand zwischen den Links */
-        padding-right: 1rem; /* Reduzierter Rand rechts */
     }
 
     .nav-link {
-        font-size: 0.9rem; /* Kleinere Schriftgröße */
+        font-size: 1rem; /* Kleinere Schriftgröße */
     }
 
     .nav-left .name {
         font-size: 1.5rem; /* Kleinere Schriftgröße für den Namen */
     }
-    
+    .form-group {
+        padding-right: 25px;
+    }
     .contact-section {
         display: grid; /* Sicherstellen, dass es ein Grid bleibt */
         grid-template-columns: 1fr; /* Einspaltig */

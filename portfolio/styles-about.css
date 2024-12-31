@@ -94,11 +94,10 @@ footer {
 
     .nav-right {
         gap: 1rem; /* Verringert den Abstand zwischen den Links */
-        padding-right: 1rem; /* Reduzierter Rand rechts */
     }
 
     .nav-link {
-        font-size: 0.9rem; /* Kleinere Schriftgröße */
+        font-size: 1rem; /* Kleinere Schriftgröße */
     }
 
     .nav-left .name {
