@@ -52,7 +52,7 @@ h1, h2 {
 }
 
 .nav-link:hover {
-    color: #d0ff00;
+    color: #CFFF04;
 }
 
 /* Hero Section */
@@ -137,7 +137,7 @@ h1, h2 {
 }
 
 .project-footer .back-to-home:hover {
-    color:#d0ff00;
+    color: #CFFF04;
 }
 
 /* Responsive Design */

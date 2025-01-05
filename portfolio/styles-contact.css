@@ -53,7 +53,7 @@ h1, h2 {
 }
 
 .nav-link:hover {
-    color: #d0ff00;
+    color: #CFFF04;
 }
 
 /* Kontaktbereich */
@@ -98,13 +98,13 @@ h1, h2 {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #d0ff00;
+    border-color: #CFFF04;
     outline: none;
     box-shadow: 0 0 5px rgba(208, 255, 0, 0.7);
 }
 
 .submit-button {
-    background-color: #d0ff00;
+    background-color: #CFFF04;
     color: #000;
     border: none;
     padding: 0.75rem 1.5rem;
