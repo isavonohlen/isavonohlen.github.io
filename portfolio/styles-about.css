@@ -84,7 +84,7 @@ h1, h2 {
 
 .profile-image {
     width: 100%;
-    max-height: 500px; /* Maximale Breite des Bildes */
+    max-height: 500px;
     object-fit: contain; /* Bild bleibt proportional */
 }
 

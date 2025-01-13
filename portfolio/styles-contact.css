@@ -72,31 +72,34 @@ h1, h2 {
     gap: 10px;
     height: 500px; /* Gesamthöhe des Bereichs */
     padding: 2rem;
-    text-align: left;
+    text-align: center;
     color: #ffffff;
 }
 
 /* Bildbereich auf der linken Seite */
 .contact-info {
     margin-top: 10rem;
-    grid-column: 1;
     background-image: url('./assets/contact_isavonohlen.jpg'); /* Hintergrundbild */
     background-size: contain; /* Das Bild füllt den Bereich proportional */
     background-position: center;
     background-repeat: no-repeat;
     height: 100%; /* Höhe des Containers */
+    grid-column: 1;
 }
 
 /* Kontaktinformationen auf der rechten Seite */
 .contact-details {
     margin-top: 10rem;
-    grid-column: 2;
-    background-color: #3C00FF; /* Heller Hintergrund für Kontrast */
+    background-color: #3c00ff; /* Heller Hintergrund für Kontrast */
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: background-color 0,3s ease;
+    transition: background-color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    border-radius: 20px;
+    grid-column: 2;
 }
 
 /* Hover-Effekt für Kontaktinformationen */
@@ -116,7 +119,7 @@ h1, h2 {
 }
 
 .contact-details a:hover {
-    color: #CFFF04;
+    color: #3c00ff;
 }
 
 footer {
@@ -133,8 +136,10 @@ footer a:hover {
     color: #d0ff00;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
 
+    /* Anordnung der Navigationslinks für mobile Ansicht */
     .nav-right {
         gap: 1rem; /* Verringert den Abstand zwischen den Links */
     }
@@ -146,26 +151,31 @@ footer a:hover {
     .nav-left .name {
         font-size: 1.5rem; /* Kleinere Schriftgröße für den Namen */
     }
-    .form-group {
-        padding-right: 25px;
-    }
+
+    /* Kontaktbereich (Grid) für mobile Ansicht */
     .contact-section {
         display: grid; /* Sicherstellen, dass es ein Grid bleibt */
         grid-template-columns: 1fr; /* Einspaltig */
         grid-template-rows: auto; /* Automatische Zeilenhöhen */
-        gap: 100px; /* Abstand zwischen den Elementen */
         overflow: hidden; /* Verhindert Überlappung durch Margins */
     }
 
+    /* Bildbereich auf der linken Seite für mobile Ansicht */
     .contact-info {
-        grid-column: 1; /* Erste Zeile der mobilen Ansicht */
-        grid-row: auto;
-        justify-content: start; /* Vertikal zentrieren für konsistente Darstellung */
+        grid-row: 1;
         width: 100%; /* Volle Breite */
+        margin: 0;
+        padding: 0;
+        position: absolute;
     }
 
-    .contact-form {
-        grid-column: 1; /* Zweite Zeile der mobilen Ansicht */
+    /* Kontaktinformationen auf der rechten Seite für mobile Ansicht */
+    .contact-details {
+        grid-row: 2;
         width: 100%; /* Volle Breite */
+        font-size: 1.2rem;
+        position: relative;
+        margin: 0;
+        padding: 0;
     }
 }
