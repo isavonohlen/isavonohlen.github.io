@@ -67,7 +67,6 @@ h1, h2 {
 
 /* Sektionen */
 .section {
-    padding: 2rem 2rem;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -112,7 +111,7 @@ h1, h2 {
 }
 
 /* Hover-Effekt für die Fotokacheln */
-.gallery-grid img:hover {
+.image-container:hover img {
     filter: blur(8px); /* Bild wird blurry beim Hover */
 }
 
@@ -123,11 +122,11 @@ h1, h2 {
     left: 50%; /* Horizontal zentriert */
     transform: translate(-50%, -50%); /* Verschiebt die Beschreibung, damit sie wirklich zentriert ist */
     color: white;
-    padding: none;
     text-align: center;
     font-size: 4rem; /* Größe der Bildbeschreibung */
     opacity: 0; /* Standardmäßig ausgeblendet */
     transition: opacity 0.3s ease; /* Weicher Übergang für das Einblenden */
+    z-index: 2; /* Stellt sicher, dass die Beschreibung über dem Bild liegt */
 }
 
 /* Bildbeschreibung bei Hover anzeigen */
@@ -135,12 +134,13 @@ h1, h2 {
     opacity: 1; /* Zeigt die Beschreibung, wenn der Container gehovt wird */
 }
 
-footer {
-    padding-top: 4rem; /* Abstand vom Inhalt des Footers zur Galerie */
+/* Sicherstellen, dass der gesamte Container den Hover-Effekt auslöst */
+.image-container:hover {
+    position: relative;
 }
 
 footer {
-    padding-top: 4rem; /* Abstand vom Inhalt des Footers zur Galerie */
+    padding-top: 10rem; /* Abstand vom Inhalt des Footers zur Galerie */
     padding: 1rem;
     text-align: center;
 }
