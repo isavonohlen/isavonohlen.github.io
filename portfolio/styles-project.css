@@ -38,6 +38,15 @@ h1, h2 {
     font-weight: bold;
 }
 
+.name a {
+    text-decoration: none;
+    color: inherit; /* Nimmt die Farbe des Eltern-Elements */
+}
+
+.name a:hover {
+    color: #d0ff00; /* Farbe beim Hover-Zustand, falls gewünscht */
+}
+
 .nav-right {
     display: flex;
     gap: 4rem;
