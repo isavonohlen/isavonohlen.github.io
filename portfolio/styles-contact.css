@@ -67,93 +67,60 @@ h1, h2 {
 
 /* Kontaktbereich */
 .contact-section {
-    padding-top: 12rem;
-    padding-left: 2rem;
-    padding-right: 2rem;  
-    padding-bottom: 8rem;
     display: grid;
-    justify-content: center; /* Zentriert die Galerie in der Horizontalen */
-    grid-template-columns: repeat(2, 670px); /* Zwei Spalten, automatisch gleichmäßig */
+    grid-template-columns: repeat(2, 670px); /* Zwei Spalten, jede 670px breit */
     gap: 10px;
-    text-align: left; /* Links ausgerichtet für modernen Look */
-}
-
-/* Kontaktformular */
-.contact-form {
-    grid-column: 2; /* Nachrichtenfeld auf der rechten Seite */
-    grid-row: 1;
-    display: grid;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.form-group {
+    height: 500px; /* Gesamthöhe des Bereichs */
+    padding: 2rem;
     text-align: left;
-    max-width: 640px;
+    color: #ffffff;
 }
 
-.form-group label {
-    font-weight: normal;
-    margin-bottom: 0.5rem;
-    max-width: 640px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    max-width: 640px;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #CFFF04;
-    outline: none;
-    box-shadow: 0 0 5px rgba(208, 255, 0, 0.7);
-}
-
-.submit-button {
-    background-color: #CFFF04;
-    color: #000;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.submit-button:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Textbereich */
+/* Bildbereich auf der linken Seite */
 .contact-info {
-    position: relative; /* Erforderlich, um den Hintergrund relativ dazu zu platzieren */
-    grid-column: 1; /* Textbereich auf der linken Seite */
-    grid-row: 1;
+    margin-top: 10rem;
+    grid-column: 1;
+    background-image: url('./assets/contact_isavonohlen.jpg'); /* Hintergrundbild */
+    background-size: contain; /* Das Bild füllt den Bereich proportional */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; /* Höhe des Containers */
+}
+
+/* Kontaktinformationen auf der rechten Seite */
+.contact-details {
+    margin-top: 10rem;
+    grid-column: 2;
+    background-color: #3C00FF; /* Heller Hintergrund für Kontrast */
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    justify-content: end;
-    z-index: 1; /* Text über dem Hintergrund platzieren */
-    background-image: url('./assets/contact_isavonohlen.jpg'); /* Hintergrundbild direkt hinzugefügt */
-    background-size: contain; /* Füllt den Bereich proportional */
-    background-position: center; /* Zentriert das Bild */
-    background-repeat: no-repeat;
-    margin-left: -100px;
-    margin-bottom: -170px;
-    margin-top: -100px;
-    padding: 100px 100px;
+    justify-content: center;
+    transition: background-color 0,3s ease;
+}
+
+/* Hover-Effekt für Kontaktinformationen */
+.contact-details:hover {
+    background-color: #d0d0d0bc; /* Kontrastfarbe bei Hover */
+}
+
+.contact-details ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #CFFF04;
 }
 
 footer {
-    padding-top: 2rem; /* Abstand vom Inhalt des Footers zur Galerie */
-    padding: 1rem;
+    padding-top: 8.25rem;
     text-align: center;
 }
 
