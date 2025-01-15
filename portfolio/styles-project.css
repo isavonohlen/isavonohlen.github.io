@@ -118,10 +118,10 @@ h1, h2 {
 /* Project Gallery */
 .project-gallery {
     display: grid;
-    justify-content: center; /* Zentriert die Galerie in der Horizontalen */
+    justify-content: center; 
     gap: 10px;
-    grid-template-columns: repeat(2, 670px); /* Zwei Spalten, automatisch gleichmäßig */
-    max-width: 1400px; /* Maximalbreite der Galerie */
+    grid-template-columns: repeat(2, 670px); 
+    max-width: 1400px; 
     margin: 0 auto;
 }
 
