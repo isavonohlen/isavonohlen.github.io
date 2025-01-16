@@ -147,8 +147,8 @@ footer a:hover {
 
 /* Schieberegler im Footer */
 .theme-toggle {
-    position: relative; /* Ändere von absolute zu relative */
-    margin: 10px auto;  /* Zentriere innerhalb des Footers */
+    position: relative; 
+    margin: 10px auto; 
     display: flex;
     justify-content: center;
     align-items: center;
