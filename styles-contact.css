@@ -81,7 +81,7 @@ h1, h2 {
 /* Bildbereich auf der linken Seite */
 .bouquet {
     margin-top: 10rem;
-    background-image: url('./assets/contact_isavonohlen.jpg'); /* Hintergrundbild */
+    background-image: url('./assets/isavonohlen_contact_bouquet.jpg'); /* Hintergrundbild */
     background-size: contain; /* Das Bild füllt den Bereich proportional */
     background-position: center;
     background-repeat: no-repeat;
