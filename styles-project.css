@@ -100,7 +100,7 @@ h1, h2 {
 .project-details {
     display: flex;
     justify-content: space-around;
-    margin: 2rem 0;
+    margin: 2rem;
     text-align: center;
 }
 
@@ -113,6 +113,30 @@ h1, h2 {
 .project-details .detail p {
     font-size: 0.9rem;
     color: #555;
+}
+
+.projekt-press h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.projekt-press a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    display: block;        /* sorgt dafür, dass margin-bottom wirkt */
+    margin-bottom: 0.75rem; /* Abstand zwischen den Links */
+}
+
+.projekt-press a:hover {
+    color: #CFFF04;
+} 
+
+.projekt-press p {
+    color: #666;
+    font-size: 0.9rem;
 }
 
 /* Project Gallery */
@@ -129,6 +153,13 @@ h1, h2 {
     width: 100%;
     height: 500px;
     object-fit: contain;
+}
+
+.mockup-hinweis {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 2rem; /* Abstand zum vorherigen Inhalt */
 }
 
 /* Footer */
