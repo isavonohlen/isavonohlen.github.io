@@ -107,6 +107,7 @@ h1, h2 {
     width: 350px; 
     height: 200px; 
     transform-style: preserve-3d; /* Wichtiger Wert für den 3D-Effekt */
+    animation: shadow-pulse 2s ease-in-out 2; /* 2 Durchläufe beim Laden */
 }
 
 /* Hover-Effekt für die Karte */
@@ -176,6 +177,12 @@ h1, h2 {
     transition: transform 0.6s; /* Rückdreh-Effekt */
 }
   
+@keyframes shadow-pulse {
+    0% { box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+    50% { box-shadow: 0 12px 24px rgba(0,0,0,0.3); }
+    100% { box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+}
+
 footer {
     text-align: center;
     padding-top: 9.25rem;
